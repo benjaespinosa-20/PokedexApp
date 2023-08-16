@@ -70,4 +70,6 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
+    implementation ("androidx.recyclerview:recyclerview:1.2.0-beta01")
+
 }

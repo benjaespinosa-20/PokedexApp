@@ -22,7 +22,7 @@ class PokeApiViewModel(private val repository: PokeApiRepository): ViewModel() {
 
 //patron factory para inyeccion de dependencias
 class PokeApiViewModelFactory(private val repo: PokeApiRepository): ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return modelClass.getConstructor(PokeApiRepository::class.java).newInstance(repo)
     }
 
